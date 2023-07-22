@@ -1,0 +1,97 @@
+h1{
+   text-align: center;
+   font-size: 50px;
+   font-family: fantasy;
+   font-weight: lighter;
+   margin-top: 0;
+   margin-bottom: auto;
+   margin-left: auto;
+   margin-right: auto;
+   background-image: url(hanumanBackground.jpg);
+   padding: 100px 0 20px 0;
+}
+.description{
+    text-align: center;
+    font-size: 20px;
+    font-weight: 200;
+    background: burlywood;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-bottom: 30px;
+    padding-top: 30px;
+} 
+span{
+    font-weight: bold;
+}
+ul{
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    list-style: none;
+    padding: 0 50px 0 50px;
+}  
+.masked{
+    display: inline-block;
+    padding: 0 90px 0 10px;
+    text-align: start;
+    margin: 0 auto;
+}
+.shadowPuppets{
+    display: inline-block;
+    padding: 0 0 0 150px;
+    margin: 0 auto;
+    text-align: start;
+}
+body{
+    background: linear-gradient(-180deg, rgb(255, 255, 255,0.8) 35%, rgba(0,0,0,0.90) 100%);
+    margin: 0;
+}
+.container_one{
+    padding: 0 0 0 127px;
+}
+.container_two{
+    text-align: center;
+}
+.maskedButton{
+    background: #dcb5ff;
+    opacity: 0.7;
+    font-weight: 500;
+    font-size: medium;
+    border: 1 outset black;
+    box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.60);
+    transition: 1s;
+}
+.shadowPuppetButton{
+    background: #dcb5ff;
+    opacity: 0.7;
+    font-weight: 500;
+    font-size: medium;
+    border: 1 outset black;
+    box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.60);
+    transition: 1s;
+}
+.maskedButton:hover{
+    width: 110px;
+    opacity: 1;
+}
+.shadowPuppetButton:hover{
+    width: 110px;
+    opacity: 1;
+}
+.resources{
+    list-style-type: square;
+    text-align: start;
+    font-size: 17px;
+    margin-bottom: 0 0 3px 0;
+    line-height: 50px;
+}
+.resourceOne{
+    color: burlywood;
+}
+.resourceTwo{
+    color: burlywood;
+}
+h3{
+    text-align: start;
+    padding-left: 15px;
+}
