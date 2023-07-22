@@ -4,23 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lakhon Khol</title>
-
-    <style>
-      h1 {
-        text-align: center;
-        font-size: 50px;
-        font-family: fantasy;
-        font-weight: lighter;
-        margin-top: 0;
-        margin-bottom: auto;
-        background-image: url(hanumanBackground.jpg);
-        padding: 100px 0 20px 0;
-      }
-      .origins {
-        text-align: center;
-        padding: 0 400px 0 400px;
-      }
-    </style>
+    <link rel="stylesheet" href="./style.css" type="text/css">
   </head>
   <body>
     <h1>
@@ -28,12 +12,71 @@
       <br />
       ល្ខោនខោល
     </h1>
-    <p>
-        <img src="" alt="">
+    <p class="description">
+        Cambodian dance and drama theatre can be performed in three forms. <span>There are two forms in which involves folklore of specific characters such as Hanuman, Preah Ream, etc.</span>
     </p>
+    <ul>
+        <li class="masked">
+          <p>
+              <strong>Lakhon Khol</strong> are Cambodian masked dance <br/> dramas that were very traditional plays to tell <br/> Cambodian folklore. Men prefer masked <br/> performances a lot more than Apsara which is <br/> similar to Lakhon Khol but without masks.
+            </p>  
+          <img src="https://www.blaineharrington.com/img-get2/I0000MXkUy7QERuI/fit=1000x750/20170223-world-12741.jpg" alt="hanuman" width="350px" height="449px">
+          <div class="container_one">
+            <button class="maskedButton">
+            Lakhon Khol
+          </button>
+          </div> 
+        </li>
+        <li class="shadowPuppets">
+          <p>
+            <strong>Lakhon Nang Sbek</strong> is another sacred form of theatre. It is very similar to Chinese Pi Ying Xi. It takes into <br/> the form of 2D shadow puppets. However, the puppeteers are actually shown in the performance where <br/>they dance while controlling the shadow puppets. Two popular genres are Sbek Thom and Sbek Toch.
+          </p>
+            <img src="https://www.jescaprudencio.com/uploads/2/8/1/3/28133025/17212122-801520469988661-7122233722254137107-o_orig.jpg" alt="Shadow Puppet" width="650px" height="449px">
+            <div class="container_two">
+             <button class="shadowPuppetButton">
+              Sbek Thom
+            </button> 
+            </div>
+        </li>
+        <hr/>
+        <h3>
+          <strong>
+            Learn more here:
+          </strong>
+        </h3>
+        <span>
+          <ul class="resources">
+            <li>
+              <a class="resourceOne" href="https://en.wikipedia.org/wiki/Lakhon_Khol">Lakhon Khol</a>
+            </li>
+            <li>
+              <a class="resourceTwo" href="https://en.wikipedia.org/wiki/Khmer_shadow_theatre">Lakhon Nang Sbek</a>
+            </li>
+          </ul>
+        </span>
+        </ul>
     <script>
+      function askNameMasked() {
+        let name = prompt('What is your name?');
+        if (confirm('Would you like to watch a video, ' + name + '?')){
+          window.location = 'https://www.youtube.com/watch?v=bSjiDO5J56Q';
+        } else {
+          alert(name + ' cancelled.');
+        }
+      }
+      let openMaskedVideo = document.querySelector('.maskedButton');
+      openMaskedVideo.addEventListener('click', askNameMasked);
       
+      function askNamePuppet() {
+        let name = prompt('What is your name?');
+        if (confirm('Would you like to watch a video, ' + name + '?')) {
+          window.location = 'https://www.youtube.com/watch?v=wDM2p2wKRYo';
+        } else{
+          alert(name + ' cancelled.');
+        }
+      }
+      let puppetVideo = document.querySelector('.shadowPuppetButton');
+      puppetVideo.addEventListener('click', askNamePuppet);
     </script>
   </body>
 </html>
-
